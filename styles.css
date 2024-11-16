@@ -40,4 +40,126 @@ body {
 i {
     font-size: var(--icon-size);
     padding: var(--padding-size);
+    display: block;
+}
+
+@keyframes firstmove {
+    0% {
+        transform: translate(0vmin, 0vmin);
+    }
+
+    100% {
+        transform: translate(0vmin, -23.52vmin);
+        animation-timing-function: linear;
+        
+    }
+}
+
+.firstmove {
+    animation-name: firstmove;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes secondmove {
+    0% {
+        transform: translate(0vmin, 0vmin);
+    }
+
+    100% {
+        transform: translate(0vmin, 23.52vmin);
+        animation-timing-function: linear;
+        
+    }
+}
+
+.secondmove {
+    animation-name: secondmove;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+@keyframes thirdmove {
+    0% {
+        transform: translate(0vmin, 0vmin);
+    }
+
+    50% {
+        transform: translate(0vmin, -23.52vmin);
+    }
+
+    100% {
+        transform: translate(-11.76vmin, -23.52vmin);
+    }
+}
+
+.thirdmove {
+    animation-name: thirdmove;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 6s;
+}
+
+@keyframes fourthmove {
+    0% {
+        transform: translate(0vmin, 0vmin);
+    }
+
+    50% {
+        transform: translate(0vmin, 23.52vmin);
+    }
+
+    100% {
+        transform: translate(11.76vmin, 23.52vmin);
+    }
+}
+
+.fourthmove {
+    animation-name: fourthmove;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 9s;
+}
+
+@keyframes fifthmove {
+    0% {
+        transform: translate(0vmin, 0vmin);
+    }
+
+    50% {
+        transform: translate(0vmin, -23.52vmin);
+    }
+
+    100% {
+        transform: translate(11.76vmin, -23.52vmin);
+    }
+}
+
+.fifthmove {
+    animation-name: fifthmove;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 12s;
+}
+
+@keyframes sixthmove {
+    0% {
+        transform: translate(0vmin, 0vmin);
+    }
+
+    50% {
+        transform: translate(0vmin, 23.52vmin);
+    }
+
+    100% {
+        transform: translate(-11.76vmin, 23.52vmin);
+    }
+}
+
+.sixthmove {
+    animation-name: sixthmove;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 15s;
 }
